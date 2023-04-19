@@ -20,10 +20,7 @@ The log content has the schema as below: <br>
 
 ## Requirements
 - Python 3.10.9
-- [Java 19.0.2](#)
-- [Hadoop winunit.exe-2.7.1](#)
-- [Spark 3.3.1-bin-hadoop2](#)
-* **Python 3.10.9**
-* **Java 19.0.2 **
-* **Hadoop winunit.exe-2.7.1**
-* **Spark 3.3.1-bin-hadoop2**
+- Java 19.0.2
+- Hadoop winunit.exe-2.7.1
+- Spark 3.3.1-bin-hadoop2
+
