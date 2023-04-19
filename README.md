@@ -13,7 +13,7 @@ The dataset used for processing is the content data of April and the lookup data
 (bỏ link chứa file trong github vào)
 
 ## ETL process details
-- [1. Cài đặt]
+- [1. Cài đặt](#caidat)
 
   - [1.1. Linux]
 ### log content
