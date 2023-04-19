@@ -13,14 +13,13 @@ The dataset used for processing is the content data of April and the lookup data
 (bỏ link chứa file trong github vào)
 
 ## ETL process details
-- [log content](#)
+- log content
 The log content has the schema as below: <br>
 ![screenshot_1681929647 (1)](https://user-images.githubusercontent.com/101572443/233170588-95393779-53ec-494f-b1da-b92b7b139e95.png)
   - Clean & Change table format
 
 ## Requirements
-- Python 3.10.9
-- Java 19.0.2
-- Hadoop winunit.exe-2.7.1
-- Spark 3.3.1-bin-hadoop2
-
+- [Python 3.10.9](#)
+- [Java 19.0.2](#)
+- [Hadoop winunit.exe-2.7.1](#)
+- [Spark 3.3.1-bin-hadoop2](#)
