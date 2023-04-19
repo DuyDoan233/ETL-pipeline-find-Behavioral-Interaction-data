@@ -17,6 +17,8 @@ The 'log content' has the schema as below: <br>
   - Clean & Change table format: Dive into the '_source' data to clean them up by pivoting the 'Type' and sum the 'TotalDuration' to figure out exactly how many hours each 'Contract' spends on each category, then expand on the ideas below.
   - Calculate Most Watch: Based on the data table calculated above to find out which 'Type' has the 'Most Watch' for each 'Contract'.
 
+## Results
+
 ## Requirements
 - [Python 3.10.9](#)
 - [Java 19.0.2](#)
