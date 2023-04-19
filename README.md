@@ -16,7 +16,6 @@ The dataset used for processing is the content data of April and the lookup data
 The log content has the schema as below:
 <br>
 ![screenshot_1681929647 (1)](https://user-images.githubusercontent.com/101572443/233170588-95393779-53ec-494f-b1da-b92b7b139e95.png)
-<br>
 ** **log content**
 ## Requirements
 * **Python 3.10.9**
