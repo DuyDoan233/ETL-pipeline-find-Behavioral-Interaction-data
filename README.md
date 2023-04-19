@@ -7,13 +7,13 @@ This project builds an ETL pipeline to process 8GB of the search and content dat
 
 ## Dataset
 The dataset used for processing is the content data of April and the lookup data of June and July generated when customers use FPT telecom services:
-* **log content**
-* **log search**
+- [log content](#logcontent)
+- [log search](#)
 <br>
 (bỏ link chứa file trong github vào)
 
 ## ETL process details
-- [1. Cài đặt](#caidat)
+- [Cài đặt](#caidat)
 
   - [1.1. Linux]
 ### log content
