@@ -21,5 +21,5 @@ The 'log content' has the schema as below: <br>
 - [Python 3.10.9](#)
 - [Java 19.0.2](#)
 - [Hadoop winunit.exe-2.7.1](#)
-- [Spark 3.3.1-bin-hadoop2](#https://www.youtube.com/watch?v=OmcSTQVkrvo)
-- [Install Apache PySpark](#https://www.youtube.com/watch?v=OmcSTQVkrvo)
+- [Spark 3.3.1-bin-hadoop2](https://www.youtube.com/watch?v=OmcSTQVkrvo)
+- [Install Apache PySpark](https://www.youtube.com/watch?v=OmcSTQVkrvo)
