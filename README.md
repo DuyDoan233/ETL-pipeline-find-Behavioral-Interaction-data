@@ -41,7 +41,7 @@ And The 'log content' was transformed as followed:
 The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.<br>
 ![image](https://user-images.githubusercontent.com/101572443/233329942-16af07f2-b648-4e55-ab7f-5f29e1a5abd7.png)
 
-  - Pickup & Clean data: During this period, I pick up the user_id & keyword that is generated when the customer opens and uses the application, not when the customer closes the application
+  - Pickup & Clean data: During this period, I pick up the 'user_id' & 'keyword' that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
   - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. so from now, the data created from 'Category' will also be affected accordingly !!)
   - Behavior: This task would be divided into 2 small tasks. Find 'Behavior_Change' represent the change in viewing habits from June to July and 'Explain_Changed' is a detailed explanation for the change in column 'Behavior_Change'.
@@ -50,7 +50,35 @@ The task in this section is to build an ETL to support data analysis in June and
       - If the value in 'Behavior_Change' is 'Unchange', it keeps 'Unchange'.
       - If the value in 'Behavior_Change' is 'Change', it will display specifics and switch from what to what.
   - Trending: This column will show the top 10 most searched data for each month
-  
+- Result
++-------+--------------------+--------------------+--------------------+--------------------+-------+-------------+-------------+---------------+---------------+
+|user_id|        keyword_june|        keyword_july|    Most_Search_june|    Most_Search_july|user_id|Category_june|Category_july|Behavior_Change|Explain_Changed|
++-------+--------------------+--------------------+--------------------+--------------------+-------+-------------+-------------+---------------+---------------+
+|0000402|xem phim nhan duy...|                null|tieu nuong tu nha...|                null|0000402|        Other|         null|      Unchanged|      Unchanged|
+|0000402|xem phim nhan duy...|                null|xem phim nhan duy...|                null|0003361|        Other|        Other|      Unchanged|      Unchanged|
+|0000402|tieu nuong tu nha...|                null|tieu nuong tu nha...|                null|0004287|        Other|         null|      Unchanged|      Unchanged|
+|0000402|tieu nuong tu nha...|                null|xem phim nhan duy...|                null|0004999|         null|        Other|      Unchanged|      Unchanged|
+|0001213|                null|Liên Minh Công Lý...|                null|Liên Minh Công Lý...|0005748|        Other|        Other|      Unchanged|      Unchanged|
+|0001213|                null|Liên Minh Công Lý...|                null|Liên Minh Công Lý...|0007564|        Other|         null|      Unchanged|      Unchanged|
+|0003361|           vuot nguc|         lộc đỉnh ký|         tây hành kỷ|         lộc đỉnh ký|0008207|         null|        Other|      Unchanged|      Unchanged|
+|0003361|           vuot nguc|         lộc đỉnh ký|    tình yêu giả dối|         lộc đỉnh ký|0008416|        Other|         null|      Unchanged|      Unchanged|
+|0003361|           vuot nguc|         lộc đỉnh ký|           vuot nguc|         lộc đỉnh ký|0010311|         null|        Other|      Unchanged|      Unchanged|
+|0003361|           vuot nguc|         lộc đỉnh ký|    yêu nhầm chị dâu|         lộc đỉnh ký|0011135|         null|        Other|      Unchanged|      Unchanged|
+|0003361|    tình yêu giả dối|         lộc đỉnh ký|         tây hành kỷ|         lộc đỉnh ký|0013936|         null|        Other|      Unchanged|      Unchanged|
+|0003361|    tình yêu giả dối|         lộc đỉnh ký|    tình yêu giả dối|         lộc đỉnh ký|0014187|         null|        Other|      Unchanged|      Unchanged|
+|0003361|    tình yêu giả dối|         lộc đỉnh ký|           vuot nguc|         lộc đỉnh ký|0017684|        Other|        Other|      Unchanged|      Unchanged|
+|0003361|    tình yêu giả dối|         lộc đỉnh ký|    yêu nhầm chị dâu|         lộc đỉnh ký|0017845|        Other|         null|      Unchanged|      Unchanged|
+|0003361|         tây hành kỷ|         lộc đỉnh ký|         tây hành kỷ|         lộc đỉnh ký|0017845|        Other|         null|        Changed|  Cartoon>Other|
+|0003361|         tây hành kỷ|         lộc đỉnh ký|    tình yêu giả dối|         lộc đỉnh ký|0017845|      Cartoon|         null|      Unchanged|      Unchanged|
+|0003361|         tây hành kỷ|         lộc đỉnh ký|           vuot nguc|         lộc đỉnh ký|0017845|      Cartoon|         null|        Changed|  Cartoon>Other|
+|0003361|         tây hành kỷ|         lộc đỉnh ký|    yêu nhầm chị dâu|         lộc đỉnh ký|0019650|        Other|        Other|      Unchanged|      Unchanged|
+|0003361|    yêu nhầm chị dâu|         lộc đỉnh ký|         tây hành kỷ|         lộc đỉnh ký|0020372|         null|        Other|      Unchanged|      Unchanged|
+|0003361|    yêu nhầm chị dâu|         lộc đỉnh ký|    tình yêu giả dối|         lộc đỉnh ký|0021489|        Other|         null|      Unchanged|      Unchanged|
++-------+--------------------+--------------------+--------------------+--------------------+-------+-------------+-------------+---------------+---------------+
+
+- Joining both of them to a data frame
+  - Due to these data 
+
 ## Results
 
 ## Requirements
