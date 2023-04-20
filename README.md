@@ -51,14 +51,14 @@ The task in this section is to build an ETL to support data analysis in June and
       - If the value in 'Behavior_Change' is 'Unchange', it keeps 'Unchange'.
       - If the value in 'Behavior_Change' is 'Change', it will display specifics and switch from what to what.
   - Trending: This column will show the top 10 most searched data for each month
-- Result <br>
-![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
 
 - Joining both of them to a data frame
   - Since there is some sensitive data involved, there is a shortage of data used for processing, so it is not possible to unify the two datafames together in the usual way, but have to fake the data and join them together.
 - Import data to MySQL
   - Create a new table on Database in MySQL to upload the final result into.
-## Final Result
+## Results
+- Log Search <br>
+![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
 
 ## Requirements
 - [Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
