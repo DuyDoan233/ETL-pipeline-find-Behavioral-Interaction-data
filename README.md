@@ -34,8 +34,7 @@ And The 'log content' was transformed as followed:
     - high:
       - 10days <= Activeness & iqr_type = middle
       - 10days <= Activeness & iqr_type = upper <br>
-- Result
-    ![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
+
 
 - Log Search <br>
 The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.<br>
@@ -57,6 +56,8 @@ The task in this section is to build an ETL to support data analysis in June and
 - Import data to MySQL
   - Create a new table on Database in MySQL to upload the final result into.
 ## Results
+- Log Content <br>
+![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
 - Log Search <br>
 ![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
 
