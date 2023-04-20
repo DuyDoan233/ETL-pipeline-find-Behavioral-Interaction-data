@@ -23,7 +23,15 @@ The 'log content' has the schema as below: <br>
     - TotalDuration < 75%(q3): upper
   - Activeness: This value will represent the total number of days each 'Contract' appears in the month to see how often the customer uses.
   - Clinginess: Based on 'IQR' and 'Activeness' we will know the frequency of use, thereby making predictions about the future actions of customers to come to decisions to increase usage time for customers such as giving reminders by message, calling customer care....The naming of the frequency is as follows:
-    low:
+    - low:
+      - Activeness <= 15days & iqr_type = lower
+    - medium:
+      - 15days < Activeness & iqr_type = lower
+		  - Activeness <= 10days & iqr_type = middle
+		  - Activeness <= 10days & iqr_type = upper
+    - high:
+      - 10days <= Activeness & iqr_type = middle
+      - 10days <= Activeness & iqr_type = upper
 <br>
 
 - log search <br>
