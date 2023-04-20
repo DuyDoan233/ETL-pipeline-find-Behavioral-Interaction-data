@@ -18,9 +18,12 @@ The 'log content' has the schema as below: <br>
   - Most Watch: Based on the data table calculated above find out which 'Type' has the 'Most Watch' for each 'Contract' by applying the Window ranking function to find where the 'rank == 1' and pick it outputting a new column named 'Most_Watch'.
   - Taste: This column contains all 'Types' whose watch time is not NULL of each 'Contact'.
   - IQR(InterQuartile Range) type: applying this type to exclude outliers or abnormal values in the data as well as give decide the usage frequency of the user, and assign a value to each interval. Divide total duration to 3 parts as follows:
-    - duration < 25%(q1): lower
-    - 25%(q1) =< duration =< 75%(q3): middle
-    - duration < 75%(q3): upper
+    - TotalDuration < 25%(q1): lower
+    - 25%(q1) =< TotalDuration =< 75%(q3): middle
+    - TotalDuration < 75%(q3): upper
+  - Activeness: This value will represent the total number of days each 'Contract' appears in the month to see how often the customer uses.
+  - Clinginess: Based on 'IQR' and 'Activeness' we will know the frequency of use, thereby making predictions about the future actions of customers to come to decisions to increase usage time for customers such as giving reminders by message, calling customer care....The naming of the frequency is as follows:
+    low:
 <br>
 
 - log search <br>
