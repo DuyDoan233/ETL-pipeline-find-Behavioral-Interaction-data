@@ -34,13 +34,9 @@ And The 'log content' was transformed as followed:
     - high:
       - 10days <= Activeness & iqr_type = middle
       - 10days <= Activeness & iqr_type = upper <br>
-
-
 - Log Search <br>
 The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.<br>
 ![image](https://user-images.githubusercontent.com/101572443/233340876-73152907-d0aa-4cd4-bffe-51718d4af896.png)
-
-
   - Pickup & Clean data: During this period, I pick up the 'user_id' & 'keyword' that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
   - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. so from now, the data created from 'Category' will also be affected accordingly !!)
@@ -50,11 +46,11 @@ The task in this section is to build an ETL to support data analysis in June and
       - If the value in 'Behavior_Change' is 'Unchange', it keeps 'Unchange'.
       - If the value in 'Behavior_Change' is 'Change', it will display specifics and switch from what to what.
   - Trending: This column will show the top 10 most searched data for each month
-
 - Joining both of them to a data frame
   - Since there is some sensitive data involved, there is a shortage of data used for processing, so it is not possible to unify the two datafames together in the usual way, but have to fake the data and join them together.
 - Import data to MySQL
   - Create a new table on Database in MySQL to upload the final result into.
+ 
 ## Results
 - Log Content <br>
 ![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
