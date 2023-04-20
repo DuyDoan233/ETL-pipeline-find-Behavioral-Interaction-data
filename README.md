@@ -50,7 +50,7 @@ The task in this section is to build an ETL to support data analysis in June and
       - If the value in 'Behavior_Change' is 'Unchange', it keeps 'Unchange'.
       - If the value in 'Behavior_Change' is 'Change', it will display specifics and switch from what to what.
   - Trending: This column will show the top 10 most searched data for each month
-- Result
+- Result <br>
 +-------+--------------------+--------------------+--------------------+--------------------+-------+-------------+-------------+---------------+---------------+
 |user_id|        keyword_june|        keyword_july|    Most_Search_june|    Most_Search_july|user_id|Category_june|Category_july|Behavior_Change|Explain_Changed|
 +-------+--------------------+--------------------+--------------------+--------------------+-------+-------------+-------------+---------------+---------------+
