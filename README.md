@@ -11,8 +11,8 @@ The dataset used for processing is the content data of April and the lookup data
 - [log search](#bỏlinkgithubvao)
 
 ## ETL process description
-- log content <br>
-The task in this section is to build an ETL to analyze data in April and rely on customer360 to find out the user's level of interaction with the application. <br>
+- Log Content <br>
+The task in this section is to build an ETL to support analyze data in April and rely on customer360 to find out the user's level of interaction with the application. <br>
 The 'log content' has the schema as below: <br>
 ![screenshot_1681929647 (1)](https://user-images.githubusercontent.com/101572443/233170588-95393779-53ec-494f-b1da-b92b7b139e95.png)<br>
 And The 'log content' was transformed as followed:
@@ -34,12 +34,20 @@ And The 'log content' was transformed as followed:
     - high:
       - 10days <= Activeness & iqr_type = middle
       - 10days <= Activeness & iqr_type = upper
-- log search <br>
-In this data, I .
+      <br>
+![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
+<br>
+- Log Search <br>
+The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.
   - Pickup & Clean data: During this period, I pick up the user_id & keyword that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
-  - Category: Since 
-  
+  - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. so from now, the data created from 'Category' will also be affected accordingly !!)
+  - Behavior: This task would be divided into 2 small tasks. Find 'Behavior_Change' represent the change in viewing habits from June to July and 'Explain_Changed' is a detailed explanation for the change in column 'Behavior_Change'.
+    - Behavior_Change: Shows the 'Change' or 'Unchange' which represents the customer's behavior.
+    - Explain_Changed:
+      - If the value in 'Behavior_Change' is 'Unchange', it keeps 'Unchange'.
+      - If the value in 'Behavior_Change' is 'Change', it will display specifics and switch from what to what.
+  - Trending: This column will show the top 10 most searched data for each month
   
 ## Results
 
