@@ -59,6 +59,7 @@ The task in this section is to build an ETL to support data analysis in June and
 ![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
 
 - Final Result
+  - Because the system cannot meet the need to export the results, there will be no picture of the final result. 
 
 ## Requirements
 - [Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
