@@ -14,11 +14,11 @@ The dataset used for processing is the content data of April and the lookup data
 - log content <br>
 The 'log content' has the schema as below: <br>
 ![screenshot_1681929647 (1)](https://user-images.githubusercontent.com/101572443/233170588-95393779-53ec-494f-b1da-b92b7b139e95.png)<br>
-And The 'log content' were transformed as followed:
+And The 'log content' was transformed as followed:
   - Clean & Change table format: Dive into the '_source' data to clean them up by pivoting the 'Type' and sum the 'TotalDuration' to figure out exactly how many hours each 'Contract' spends on each category, then expand on the ideas below.
   - Most Watch: Based on the data table calculated above find out which 'Type' has the 'Most Watch' for each 'Contract' by applying the Window ranking function to find where the 'rank == 1' and pick it outputting a new column named 'Most_Watch'.
   - Taste: This column contains all 'Types' whose watch time is not NULL of each 'Contact'.
-  - IQR(InterQuartile Range) type: applying this type to exclude outliers or abnormal values in the data as well as give decide the usage frequency of the user, and assign a value to each interval. Divide total duration to 3 parts as follows:
+  - IQR(InterQuartile Range) type: Applying this type to exclude outliers or abnormal values in the data as well as give decide the usage frequency of the user, and assign a value to each interval. Divide total duration to 3 parts as follows:
     - TotalDuration < 25%(q1): lower
     - 25%(q1) =< TotalDuration =< 75%(q3): middle
     - TotalDuration < 75%(q3): upper
@@ -36,7 +36,10 @@ And The 'log content' were transformed as followed:
 <br>
 
 - log search <br>
-  
+In this data, I .
+  - Pickup & Clean data: During this period, I pick up the user_id & keyword that is generated when the customer opens and uses the application, not when the customer closes the application
+  - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
+  - Category: Since 
   
   
 ## Results
