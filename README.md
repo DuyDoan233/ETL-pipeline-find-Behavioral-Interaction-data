@@ -34,8 +34,6 @@ And The 'log content' was transformed as followed:
     - high:
       - 10days <= Activeness & iqr_type = middle
       - 10days <= Activeness & iqr_type = upper
-<br>
-
 - log search <br>
 In this data, I .
   - Pickup & Clean data: During this period, I pick up the user_id & keyword that is generated when the customer opens and uses the application, not when the customer closes the application
