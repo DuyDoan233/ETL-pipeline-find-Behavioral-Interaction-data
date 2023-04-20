@@ -17,8 +17,11 @@ The 'log content' has the schema as below: <br>
   - Clean & Change table format: Dive into the '_source' data to clean them up by pivoting the 'Type' and sum the 'TotalDuration' to figure out exactly how many hours each 'Contract' spends on each category, then expand on the ideas below.
   - Most Watch: Based on the data table calculated above find out which 'Type' has the 'Most Watch' for each 'Contract' by applying the Window ranking function to find where the 'rank == 1' and pick it outputting a new column named 'Most_Watch'.
   - Taste: This column contains all 'Types' whose watch time is not NULL of each 'Contact'.
-  - IQR(InterQuartile Range) type: applying this type to exclude outliers or outliers in the data.
-
+  - IQR(InterQuartile Range) type: applying this type to exclude outliers or abnormal values in the data as well as give decide the usage frequency of the user, and assign a value to each interval as follows:
+    -  Divide total duration to 3 parts:
+      - duration < 25%(q1): lower
+      - 25%(q1) =< duration =< 75%(q3): middle
+      - duration < 75%(q3): upper
 <br>
 
 - log search <br>
