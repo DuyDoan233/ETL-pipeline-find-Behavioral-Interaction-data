@@ -39,7 +39,7 @@ The task in this section is to build an ETL to support data analysis in June and
 ![image](https://user-images.githubusercontent.com/101572443/233340876-73152907-d0aa-4cd4-bffe-51718d4af896.png)
   - Pickup & Clean data: During this period, I pick up the 'user_id' & 'keyword' that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
-  - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. so from now, the data created from 'Category' will also be affected accordingly !!)
+  - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. So there some position has null result and from now, the data created from 'Category' will also be affected accordingly !!)
   - Behavior: This task would be divided into 2 small tasks. Find 'Behavior_Change' represent the change in viewing habits from June to July and 'Explain_Changed' is a detailed explanation for the change in column 'Behavior_Change'.
     - Behavior_Change: Shows the 'Change' or 'Unchange' which represents the customer's behavior.
     - Explain_Changed:
