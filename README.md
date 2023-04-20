@@ -34,7 +34,7 @@ And The 'log content' was transformed as followed:
     - high:
       - 10days <= Activeness & iqr_type = middle
       - 10days <= Activeness & iqr_type = upper
-      <br>
+Result
 ![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
 <br>
 - Log Search <br>
