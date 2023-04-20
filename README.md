@@ -18,7 +18,9 @@ The 'log content' has the schema as below: <br>
   - Most Watch: Based on the data table calculated above find out which 'Type' has the 'Most Watch' for each 'Contract' by applying the Window ranking function to find where the 'rank == 1' and pick it outputting a new column named 'Most_Watch'.
   - Taste: This column contains all 'Types' whose watch time is not NULL of each 'Contact'.
   - IQR(InterQuartile Range) type: applying this type to exclude outliers or outliers in the data.
+
 <br>
+
 - log search <br>
 ## Results
 
