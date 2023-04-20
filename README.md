@@ -39,7 +39,7 @@ And The 'log content' was transformed as followed:
 
 - Log Search <br>
 The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.<br>
-![image](https://user-images.githubusercontent.com/101572443/233329942-16af07f2-b648-4e55-ab7f-5f29e1a5abd7.png)
+![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
 
   - Pickup & Clean data: During this period, I pick up the 'user_id' & 'keyword' that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
