@@ -53,36 +53,38 @@ The task in this section is to build an ETL to support data analysis in June and
  
 ## Results
 - Log Content <br>
-![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
+![image](https://user-images.githubusercontent.com/101572443/233354062-5e147240-2372-49f3-bda2-d297fb88d225.png)
 
-+--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+
-|      Contract|Giải_Trí|Phim_Truyện|Thiếu_Nhi|Thể_Thao|Truyền_Hình| Most_Watch|IQR_Type|Activeness|
-+--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+
-|113.182.209.48|      89|       null|     null|    null|         63|   Giải_Trí|   lower|         1|
-|113.182.209.48|      89|       null|     null|    null|         63|   Giải_Trí|   lower|         1|
-|14.182.110.125|      92|       null|     null|    null|        404|Truyền_Hình|   lower|         1|
-|14.182.110.125|      92|       null|     null|    null|        404|Truyền_Hình|   lower|         1|
-|     AGAAA0338|    null|       null|     null|    null|     278633|Truyền_Hình|  middle|        30|
-|     AGAAA0342|     204|       null|     null|    null|     117788|Truyền_Hình|   lower|        12|
-|     AGAAA0342|     204|       null|     null|    null|     117788|Truyền_Hình|  middle|        12|
-|     AGAAA0391|     373|       null|     null|    null|     158931|Truyền_Hình|   lower|        11|
-|     AGAAA0391|     373|       null|     null|    null|     158931|Truyền_Hình|  middle|        11|
-|     AGAAA0452|    null|       null|     null|    null|      29921|Truyền_Hình|  middle|        14|
-|     AGAAA0593|    null|       null|     null|    null|       1038|Truyền_Hình|   lower|         3|
-|     AGAAA0613|      26|       null|     null|    null|       9377|Truyền_Hình|   lower|        24|
-|     AGAAA0613|      26|       null|     null|    null|       9377|Truyền_Hình|   lower|        24|
-|     AGAAA0638|    null|       null|     null|    null|     227016|Truyền_Hình|  middle|        30|
-|     AGAAA0663|    null|       null|     null|    null|      89001|Truyền_Hình|  middle|        29|
-|     AGAAA0692|    null|       null|     null|    null|     107057|Truyền_Hình|  middle|         8|
-|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|   lower|        29|
-|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|   lower|        29|
-|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|  middle|        29|
-|     AGAAA0718|    null|       null|     null|    null|     634586|Truyền_Hình|   upper|        28|
-+--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+
++--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+----------+--------------------+--------------------+------------+--------------------+
+|      Contract|Giải_Trí|Phim_Truyện|Thiếu_Nhi|Thể_Thao|Truyền_Hình| Most_Watch|IQR_Type|Activeness|Clinginess|               Taste|        keyword_june|keyword_july|    Most_Search_june|
++--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+----------+--------------------+--------------------+------------+--------------------+
+|113.182.209.48|      89|       null|     null|    null|         63|   Giải_Trí|   lower|         1|       low|       G.Trí, T.Hình|xem phim nhan duy...|        null|tieu nuong tu nha...|
+|113.182.209.48|      89|       null|     null|    null|         63|   Giải_Trí|   lower|         1|       low|       G.Trí, T.Hình|xem phim nhan duy...|        null|xem phim nhan duy...|
+|14.182.110.125|      92|       null|     null|    null|        404|Truyền_Hình|   lower|         1|       low|       G.Trí, T.Hình|tieu nuong tu nha...|        null|tieu nuong tu nha...|
+|14.182.110.125|      92|       null|     null|    null|        404|Truyền_Hình|   lower|         1|       low|       G.Trí, T.Hình|tieu nuong tu nha...|        null|xem phim nhan duy...|
+|     AGAAA0338|    null|       null|     null|    null|     278633|Truyền_Hình|  middle|        30|      high|              T.Hình|           vuot nguc| lộc đỉnh ký|         tây hành kỷ|
+|     AGAAA0342|     204|       null|     null|    null|     117788|Truyền_Hình|   lower|        12|       low|       G.Trí, T.Hình|           vuot nguc| lộc đỉnh ký|    tình yêu giả dối|
+|     AGAAA0342|     204|       null|     null|    null|     117788|Truyền_Hình|  middle|        12|      high|       G.Trí, T.Hình|           vuot nguc| lộc đỉnh ký|           vuot nguc|
+|     AGAAA0391|     373|       null|     null|    null|     158931|Truyền_Hình|   lower|        11|       low|       G.Trí, T.Hình|           vuot nguc| lộc đỉnh ký|    yêu nhầm chị dâu|
+|     AGAAA0391|     373|       null|     null|    null|     158931|Truyền_Hình|  middle|        11|      high|       G.Trí, T.Hình|    tình yêu giả dối| lộc đỉnh ký|         tây hành kỷ|
+|     AGAAA0452|    null|       null|     null|    null|      29921|Truyền_Hình|  middle|        14|      high|              T.Hình|    tình yêu giả dối| lộc đỉnh ký|    tình yêu giả dối|
+|     AGAAA0593|    null|       null|     null|    null|       1038|Truyền_Hình|   lower|         3|       low|              T.Hình|    tình yêu giả dối| lộc đỉnh ký|           vuot nguc|
+|     AGAAA0613|      26|       null|     null|    null|       9377|Truyền_Hình|   lower|        24|    medium|       G.Trí, T.Hình|    tình yêu giả dối| lộc đỉnh ký|    yêu nhầm chị dâu|
+|     AGAAA0613|      26|       null|     null|    null|       9377|Truyền_Hình|   lower|        24|    medium|       G.Trí, T.Hình|         tây hành kỷ| lộc đỉnh ký|         tây hành kỷ|
+|     AGAAA0638|    null|       null|     null|    null|     227016|Truyền_Hình|  middle|        30|      high|              T.Hình|         tây hành kỷ| lộc đỉnh ký|    tình yêu giả dối|
+|     AGAAA0663|    null|       null|     null|    null|      89001|Truyền_Hình|  middle|        29|      high|              T.Hình|         tây hành kỷ| lộc đỉnh ký|           vuot nguc|
+|     AGAAA0692|    null|       null|     null|    null|     107057|Truyền_Hình|  middle|         8|    medium|              T.Hình|         tây hành kỷ| lộc đỉnh ký|    yêu nhầm chị dâu|
+|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|   lower|        29|    medium|G.Trí, T.Nhi, T.Hình|    yêu nhầm chị dâu| lộc đỉnh ký|         tây hành kỷ|
+|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|   lower|        29|    medium|G.Trí, T.Nhi, T.Hình|    yêu nhầm chị dâu| lộc đỉnh ký|    tình yêu giả dối|
+|     AGAAA0693|     482|       null|    10361|    null|     233447|Truyền_Hình|  middle|        29|      high|G.Trí, T.Nhi, T.Hình|    yêu nhầm chị dâu| lộc đỉnh ký|           vuot nguc|
+|     AGAAA0718|    null|       null|     null|    null|     634586|Truyền_Hình|   upper|        28|      high|              T.Hình|    yêu nhầm chị dâu| lộc đỉnh ký|    yêu nhầm chị dâu|
++--------------+--------+-----------+---------+--------+-----------+-----------+--------+----------+----------+--------------------+--------------------+------------+--------------------+
 only showing top 20 rows
 
 - Log Search <br>
 ![image](https://user-images.githubusercontent.com/101572443/233336973-2b5b4c3b-dc5b-4c7f-9f2e-531cf30a5776.png)
+
+- Final Result
 
 ## Requirements
 - [Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
