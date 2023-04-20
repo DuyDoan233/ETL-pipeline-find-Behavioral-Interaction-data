@@ -60,8 +60,8 @@ The task in this section is to build an ETL to support data analysis in June and
 ## Final Result
 
 ## Requirements
-- [Python 3.10.9](#)
-- [Java 19.0.2](#)
-- [Hadoop winunit.exe-2.7.1](#)
-- [Spark 3.3.1-bin-hadoop2](https://www.youtube.com/watch?v=OmcSTQVkrvo)
+- [Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
+- [Java 19.0.2](https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html)
+- [Hadoop winunit.exe-2.7.1](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe)
+- [Spark 3.3.1-bin-hadoop2](https://spark.apache.org/downloads.html)
 - [Install Apache PySpark](https://www.youtube.com/watch?v=OmcSTQVkrvo)
