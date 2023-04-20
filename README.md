@@ -38,7 +38,9 @@ And The 'log content' was transformed as followed:
     ![image](https://user-images.githubusercontent.com/101572443/233328617-091c4ab9-da1c-479c-9142-79b73ae1a9ed.png)
 
 - Log Search <br>
-The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.
+The task in this section is to build an ETL to support data analysis in June and July as well as rely on customer360 to compare and find the change of customers' application usage habits in 2 months.<br>
+![image](https://user-images.githubusercontent.com/101572443/233329942-16af07f2-b648-4e55-ab7f-5f29e1a5abd7.png)
+
   - Pickup & Clean data: During this period, I pick up the user_id & keyword that is generated when the customer opens and uses the application, not when the customer closes the application
   - Most Search: It has the same process with 'Most Watch'. Take the 'keyword' has 'rank == 1' and pick it outputting a new column named 'Most_Search'.
   - Category: This stage will map between the customer's keyword and the library where the movie name and genre of a movie of FPT are stored to create a column of movie genres that customers watched in the month. (But since the library is sensitive and not shared data, I manually mapped and faked them. so from now, the data created from 'Category' will also be affected accordingly !!)
